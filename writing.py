@@ -8,10 +8,9 @@ background = Image.open('hand_fonts/page.png')
 x, y = 0, 0
 
 for text in unidecode(input_text):
-    #verifica se tem quebra de linha e atualiza o eixo y, 
+    # verifica se tem quebra de linha e atualiza o eixo y, 
     # acrescentando 140px para a proxima linha
     if ord(text) == 10:
-      print('Entrou?')
       x = 0
       y += 140
       continue
